@@ -1,14 +1,29 @@
+import java.util.Scanner;
 public class Store {
     public static void main(String[] args) {
-        int p1 = 15;
-        int p2 = 10;
-        int p3 = 5;
+        Scanner escaner = new Scanner(System.in);
+        float [] preciosProductos= new float [3];
+        int [] cantidades= new int [3];
+        final int numeroProductos=3;
 
-        int total1 = p1 * 2;
-        int total2 = p2 * 3;
-        int total3 = p3 * 4;
+        for (int j = 1; j <= numeroProductos; j++) {
+            System.out.println("Ingrese el precio del producto "+j);
+            float producto=escaner.nextInt();
+            preciosProductos[j-1]=producto;
 
-        int totalSales = total1 + total2 + total3;
+            
+        }
+        for (int i = 1; i<=numeroProductos; i++) {
+            System.out.println("Ingrese la cantidad el producto "+i);
+            int cantidad=escaner.nextInt();
+            cantidades[i-1]=cantidad;
+
+        }
+    
+        float total1 = (preciosProductos[0])*cantidades[0];
+        float total2 = (preciosProductos[1])*cantidades[1];
+        float total3 = (preciosProductos[2]*cantidades[2]);
+        float totalSales = total1 + total2 + total3;
 
         if (totalSales > 50) {
             System.out.println("Good sales performance");

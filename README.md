@@ -56,3 +56,17 @@ You must follow the **SDLC process** to refactor the code:
    - Once you complete the refactorization, push your changes to your forked repository.
    - Create a pull request (PR) to the original repository, explaining the improvements you made and how you followed the **SDLC** approach.
 
+DOCUMENTACION:
+Primer punto (AgeValidation):
+El codigo presentaba inconsistencia como: 
+1. presentaba numeros magicos
+2. presentaba logica redundante
+como programador realice las debidas modificaciones para el codigo:
+1. elimine los numeros magicos y los asigne a una variable constante
+2. elimine la logida redundante, implementando un estructura 'if-else'
+3. y aparte de los errores lo modifique de una forma que el usuario pueda ingresar su edad.
+
+Segundo punto (Store):
+Se eliminaron todos los valores magicos
+Se agregaron sentencias de for para agregar las cantidades y precios a matrices
+no escribo mas porque no me alcanza el tiempo
