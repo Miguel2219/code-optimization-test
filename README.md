@@ -67,6 +67,18 @@ como programador realice las debidas modificaciones para el codigo:
 3. y aparte de los errores lo modifique de una forma que el usuario pueda ingresar su edad.
 
 Segundo punto (Store):
-Se eliminaron todos los valores magicos
-Se agregaron sentencias de for para agregar las cantidades y precios a matrices
-no escribo mas porque no me alcanza el tiempo
+1. Se eliminaron todos los valores magicos
+2. Se agrego una entrada, para que el usuario ingrese el numero de productos
+3. Se creo dos listas, una para almancenar el precio de los productos,y la otra para almacenar las cantidades de cada producto, donde cada informacion de un producto se encuentra en el mismo indice de ambas listas.
+4. Se realizo dos ciclos FOR, para que el usuario ingrese la informacion pedida, y asi almancenar en las listas.
+5. Se realizo un ultimo ciclo FOR, para hacer la sumatoria total de la compra
+6. Se evaluo que si el total de la compra es mayor a 50, fue buena. de lo contrario, fue mala.
+
+Terce punto (TaxCalculation):
+1. Se eliminaros los valores magico
+2. se pidio al usuario la cantidad de productos
+3. Se crearon dos listas para almacenar, el precio de cada prodcuto con su tasa, con la longitud de la cantidad de productos ingresada por el usuario
+4. se crearon dos ciclos FOR, para pedir al usuario que ingrese la informacion, y añadirla en las listas.
+5. cada producto tiene un indice en la lista
+6. se creo un ultimo ciclo FOR, para calcular el total de la tasa.
+7. Se evaluo con un condicional, que si la tasa es mayor a 50, se muestra al usuario que tuvo una tasa alta. de lo contrario, se imprime tasa baja.

@@ -2,36 +2,34 @@ import java.util.Scanner;
 public class Store {
     public static void main(String[] args) {
         Scanner escaner = new Scanner(System.in);
-        float [] preciosProductos= new float [3];
-        int [] cantidades= new int [3];
-        float totalSales = total1 + total2 + total3;
-        final int numeroProductos=3;
+        System.out.println("Ingrese el numero de productos comprados");
+        int numeroProductos=escaner.nextInt();        
+        float [] preciosProductos= new float [numeroProductos];
+        int [] cantidades= new int [numeroProductos];
+        float totalCompra=0;
 
         for (int j = 0; j < numeroProductos; j++) {
-            System.out.println("Ingrese el precio del producto "+j);
+            System.out.println("Ingrese el precio del producto "+(j+1));
             float producto=escaner.nextInt();
-            preciosProductos[j-1]=producto;
+            preciosProductos[j]=producto;
 
             
         }
         for (int i = 0; i<numeroProductos; i++) {
-            System.out.println("Ingrese la cantidad el producto "+i);
+            System.out.println("Ingrese la cantidad el producto "+(i+1));
             int cantidad=escaner.nextInt();
-            cantidades[i-1]=cantidad;
+            cantidades[i]=cantidad;
 
         }
         for (int h = 0; h < cantidades.length; h++) {
-            
-
-
-
+            float subtotal=0;
+            subtotal=preciosProductos[h]*cantidades[h];
+            totalCompra+=subtotal;
         }
-        
-
-        if (totalSales > 50) {
-            System.out.println("Good sales performance");
+        if (totalCompra > 50) {
+            System.out.println(totalCompra+" Good sales performance");
         } else {
-            System.out.println("Low sales performance");
+            System.out.println(totalCompra+" Low sales performance");
         }
     }
 }
